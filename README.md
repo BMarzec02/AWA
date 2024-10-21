@@ -1,2 +1,2 @@
 # AWA
-Aplikacje Webowe AJAX/Języki programowania dynamicznych stron internetowych II
+Zadania realizowane w ramach studiów inżynierskich, na moduły Aplikacje Webowe AJAX oraz Języki programowania dynamicznych stron internetowych II
