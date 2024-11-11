@@ -1,0 +1,23 @@
+html{
+	background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+	min-height: 100%;
+}
+
+body{
+	font-family: 'Century Gothic',helvetica,verdana,arial;
+	margin:0;	
+}
+
+.bottom-space{
+	margin-bottom: 1em;
+}
+
+.top-space{
+	margin-top: 1em;
+}
+
+#page_wrapper{
+	margin: 1em;
+	min-width: 700px;
+}
+
