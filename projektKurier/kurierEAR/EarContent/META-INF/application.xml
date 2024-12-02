@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application id="Application_ID" version="10"
+	xmlns="https://jakarta.ee/xml/ns/jakartaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/application_10.xsd">
+	<display-name>kurierEAR</display-name>
+	<module>
+    <web>
+      <web-uri>kurierWEB.war</web-uri>
+      <context-root>kurierWEB</context-root>
+    </web>
+  </module>
+  <module>
+    <ejb>kurierEJB.jar</ejb>
+  </module>
+</application> 

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+<h:head>
+    <meta charset="UTF-8" />
+    <title>Aplikacja kurierska</title>
+</h:head>
+<h:body style="background-color: #eee; margin: 0.5em;">
+
+<h:form>
+    <p:dataTable value="#{uzytkownicyList.list}" var="u">
+
+        <p:column>
+            <f:facet name="header">
+                <h:outputText value="Email" />
+            </f:facet>
+            <h:outputText value="#{u.email}" />
+        </p:column>
+
+        <p:column>
+            <f:facet name="header">
+                <h:outputText value="Login" />
+            </f:facet>
+            <h:outputText value="#{u.login}" />
+        </p:column>
+
+        <p:column>
+            <f:facet name="header">
+                <h:outputText value="Telefon" />
+            </f:facet>
+            <h:outputText value="#{u.phoneNumber}" />
+        </p:column>
+
+        <p:column>
+            <f:facet name="header">
+                <h:outputText value="Opcje" />
+            </f:facet>
+
+            <p:commandButton value="Edytuj"
+                             action="#{uzytkownicyList.editUzytkownik(u)}" />
+
+            <p:commandButton value="Usuń"
+                             action="#{uzytkownicyList.deleteUzytkownik(u)}" 
+                             update="@form" />
+
+            <p:button outcome="uzytkownikEditGET" value="Edytuj (GET)">
+                <f:param name="u" value="#{u.id}" />
+            </p:button>
+        </p:column>
+
+    </p:dataTable>
+</h:form>
+
+</h:body>
+</html>
